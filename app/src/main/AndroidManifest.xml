@@ -5,14 +5,20 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".view.DetailDataBaruActivity"></activity>
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".view.SurveyActivity"></activity>
+        <activity android:name=".view.ProfileActivity" />
+        <activity android:name=".view.DetailDataValidActivity" />
+        <activity android:name=".view.DataValidActivity" />
+        <activity android:name=".view.DetailDataConfirmedIIActivity" />
+        <activity android:name=".view.ConfirmTwoActivity" />
+        <activity android:name=".view.DetailDataBaruActivity" />
         <activity android:name=".view.DataBaruActivity" />
         <activity android:name=".view.LoginActivity">
             <intent-filter>

@@ -1,14 +1,16 @@
 <resources>
-    <string name="app_name">petugas</string>
+    <string name="app_name">pegawai Disdukcapil</string>
     <string name="masukan_username">masukan username</string>
     <string name="masukan_password">masukan password</string>
+    <string name="title">Bangdu</string>
+    <string name="subTitle">Bantuan Uang Duka</string>
     <string name="login">login</string>
     <string name="nama">m ibnu subhan</string>
     <string name="name">ibnu</string>
     <string name="nik">33312</string>
     <string name="terima">Terima</string>
     <string name="tolak">Tolak</string>
-    <string name="keterangan">Keterangan</string>
+    <string name="keterangan">Keterangan lainnya</string>
     <string name="ktp_meninggal">ktp meninggal</string>
     <string name="kk_meninggal">kk meninggal</string>
     <string name="jamkesmas">Jamkesmas</string>
@@ -17,4 +19,9 @@
     <string name="akta_kematian">Akta Kematian</string>
     <string name="surat_pernyataan_waris">surat pernyataan waris</string>
     <string name="pakta_integritas_ahli_waris">pakta integritas ahli waris</string>
+    <string name="kirim_berkas">Kirim Berkas</string>
+    <string name="pilihsatu">Data Sah , Tunggu kabar pencairan dana</string>
+    <string name="opsiSatu">Berkas Diterima di DisDukcapil</string>
+    <string name="opsiDua">Berkas Di tolak silahkan melakukan pengiriman ulang berkas</string>
+    <string name="buku_tabungan">Buku Tabungan</string>
 </resources>

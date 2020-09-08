@@ -16,7 +16,7 @@ import mibnu.team.petugas.viewmodels.DataState
 import mibnu.team.petugas.viewmodels.DataViewModel
 
 class DataBaruActivity : AppCompatActivity() {
-    private lateinit var dataViewModel : DataViewModel
+    private lateinit var dataViewModel: DataViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

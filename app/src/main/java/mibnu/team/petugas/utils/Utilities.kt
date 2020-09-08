@@ -16,8 +16,12 @@ class Utilities {
                 apply()
             }
         }
+        fun clearToken(context: Context){
+            val pref = context.getSharedPreferences("USER", Context.MODE_PRIVATE)
+            pref.edit().clear().apply()
+        }
 
         fun isValidUsername(username : String?) = !username.isNullOrEmpty()
-        fun isValidPassword(password : String) = password.length >= 1
+        fun isValidPassword(password : String) = password.length >= 6
     }
 }

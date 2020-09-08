@@ -8,8 +8,8 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:paddingRight="5dp"
-        android:paddingLeft="11dp"
+        android:paddingRight="@dimen/_2sdp"
+        android:paddingLeft="@dimen/_9sdp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/header"
@@ -22,12 +22,12 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="120dp"
-        android:text="Selamat bekerja dan berkarya"
-        android:textSize="20sp"
+        android:layout_marginTop="104dp"
+        android:text="Selamat bekerja dan berkarya! "
         android:textColor="@color/white"
+        android:textSize="@dimen/_15ssp"
         app:layout_constraintEnd_toEndOf="@+id/imageView2"
-        app:layout_constraintHorizontal_bias="0.22"
+        app:layout_constraintHorizontal_bias="0.386"
         app:layout_constraintStart_toStartOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="@+id/imageView2" />
 
@@ -35,29 +35,28 @@
         android:id="@+id/nameOffice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="hadi"
+        android:layout_marginTop="28dp"
         android:textColor="@color/white"
-        android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="@+id/imageView2"
-        app:layout_constraintHorizontal_bias="0.08"
-        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintEnd_toEndOf="@id/textView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <androidx.appcompat.widget.AppCompatImageButton
         android:id="@+id/dataMasuk"
-        android:layout_width="139dp"
-        android:layout_height="139dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="36dp"
+        android:layout_width="@dimen/_110sdp"
+        android:layout_height="@dimen/_110sdp"
+        android:layout_marginStart="@dimen/_34sdp"
+        android:layout_marginTop="@dimen/_26sdp"
         android:background="@drawable/menu"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="59dp"
-        android:layout_height="53dp"
+        android:layout_width="@dimen/_49sdp"
+        android:layout_height="@dimen/_43sdp"
         android:src="@drawable/berkas"
         app:layout_constraintBottom_toBottomOf="@+id/dataMasuk"
         app:layout_constraintEnd_toEndOf="@+id/dataMasuk"
@@ -67,9 +66,10 @@
         app:layout_constraintVertical_bias="0.372" />
 
     <TextView
-        android:layout_width="95dp"
-        android:layout_height="15dp"
-        android:text="Berkas Masuk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Berkas Baru"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="@+id/dataMasuk"
         app:layout_constraintEnd_toEndOf="@+id/imageView3"
         app:layout_constraintHorizontal_bias="0.444"
@@ -79,20 +79,19 @@
 
     <androidx.appcompat.widget.AppCompatImageButton
         android:id="@+id/berkasSah"
-        android:layout_width="139dp"
-        android:layout_height="139dp"
-        android:layout_marginTop="36dp"
+        android:layout_width="@dimen/_110sdp"
+        android:layout_height="@dimen/_110sdp"
         android:background="@drawable/menu"
         app:layout_constraintEnd_toEndOf="@+id/imageView2"
         app:layout_constraintStart_toEndOf="@+id/dataMasuk"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toTopOf="@+id/dataMasuk" />
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="59dp"
-        android:layout_height="53dp"
-        android:layout_marginTop="32dp"
-        android:src="@drawable/berkassah"
+        android:layout_width="@dimen/_49sdp"
+        android:layout_height="@dimen/_43sdp"
+        android:layout_marginTop="@dimen/_26sdp"
+        android:src="@drawable/failure"
         app:layout_constraintEnd_toEndOf="@+id/berkasSah"
         app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toStartOf="@+id/berkasSah"
@@ -101,26 +100,25 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Berkas Sah"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:text="berkas gagal"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="@+id/imageView4"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/imageView4"
         app:layout_constraintTop_toBottomOf="@+id/imageView4" />
-
     <androidx.appcompat.widget.AppCompatImageButton
         android:id="@+id/dataDinkes"
-        android:layout_width="139dp"
-        android:layout_height="139dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="36dp"
+        android:layout_width="@dimen/_110sdp"
+        android:layout_height="@dimen/_110sdp"
+        android:layout_marginTop="@dimen/_26sdp"
         android:background="@drawable/menu"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/dataMasuk"
         app:layout_constraintTop_toBottomOf="@+id/dataMasuk" />
     <ImageView
         android:id="@+id/berkasDinkes"
-        android:layout_width="59dp"
-        android:layout_height="53dp"
+        android:layout_width="@dimen/_49sdp"
+        android:layout_height="@dimen/_43sdp"
         android:src="@drawable/berkasdinkes"
         app:layout_constraintBottom_toBottomOf="@+id/dataDinkes"
         app:layout_constraintEnd_toEndOf="@+id/dataDinkes"
@@ -128,16 +126,48 @@
         app:layout_constraintStart_toStartOf="@+id/dataDinkes"
         app:layout_constraintTop_toTopOf="@+id/dataDinkes"
         app:layout_constraintVertical_bias="0.372" />
-
     <TextView
-        android:layout_width="95dp"
-        android:layout_height="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Berkas Masuk"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="@+id/dataDinkes"
         app:layout_constraintEnd_toEndOf="@+id/berkasDinkes"
         app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintStart_toStartOf="@+id/berkasDinkes"
         app:layout_constraintTop_toBottomOf="@+id/berkasDinkes"
+        app:layout_constraintVertical_bias="0.205" />
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/dataSurvey"
+        android:layout_width="@dimen/_110sdp"
+        android:layout_height="@dimen/_110sdp"
+        android:layout_marginStart="44dp"
+        android:background="@drawable/menu"
+        app:layout_constraintEnd_toEndOf="@+id/berkasSah"
+        app:layout_constraintStart_toEndOf="@id/dataDinkes"
+        app:layout_constraintTop_toTopOf="@+id/dataDinkes" />
+    <ImageView
+        android:id="@+id/berkasSurvey"
+        android:layout_width="@dimen/_49sdp"
+        android:layout_height="@dimen/_43sdp"
+        android:src="@drawable/survey"
+        app:layout_constraintBottom_toBottomOf="@+id/dataSurvey"
+        app:layout_constraintEnd_toEndOf="@+id/dataSurvey"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="@+id/dataSurvey"
+        app:layout_constraintTop_toTopOf="@+id/dataSurvey"
+        app:layout_constraintVertical_bias="0.372" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hasil Survey"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/dataSurvey"
+        app:layout_constraintEnd_toEndOf="@+id/berkasSurvey"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="@+id/berkasSurvey"
+        app:layout_constraintTop_toBottomOf="@+id/berkasSurvey"
         app:layout_constraintVertical_bias="0.205" />
 
 

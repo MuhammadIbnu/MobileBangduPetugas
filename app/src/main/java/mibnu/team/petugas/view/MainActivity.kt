@@ -25,5 +25,18 @@ class MainActivity : AppCompatActivity() {
         dataMasuk.setOnClickListener {
             startActivity(Intent(this,DataBaruActivity::class.java))
         }
+        dataDinkes.setOnClickListener {
+            startActivity(Intent(this,ConfirmTwoActivity::class.java))
+        }
+
+        berkasSah.setOnClickListener {
+            startActivity(Intent(this,DataValidActivity::class.java))
+        }
+        imageView2.setOnClickListener {
+            startActivity(Intent(this,ProfileActivity::class.java))
+        }
+        dataSurvey.setOnClickListener {
+            startActivity(Intent(this,SurveyActivity::class.java))
+        }
     }
 }

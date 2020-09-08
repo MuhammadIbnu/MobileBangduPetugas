@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.DetailDataValidActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:paddingRight="@dimen/_5sdp"
+            android:paddingLeft="@dimen/_11sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/header"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.454"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"
+            app:layout_constraintHorizontal_bias="0.202"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="@+id/imageView2"
+            app:layout_constraintVertical_bias="0.429">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ahli Waris"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_12ssp"
+                    android:textColor="@color/white"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:text="Nik     :"/>
+                <TextView
+                    android:layout_margin="@dimen/_5sdp"
+                    android:id="@+id/nik"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0978867896"
+                    android:textSize="@dimen/_12ssp"
+                    android:textColor="@color/white"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_12ssp"
+                    android:textColor="@color/white"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:text="KK      :"/>
+                <TextView
+                    android:id="@+id/kk"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0978867896"
+                    android:textSize="@dimen/_12ssp"
+                    android:textColor="@color/white"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama :"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/nama"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ibnu"
+                    android:textSize="@dimen/_12ssp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/imageView2"
+            tools:layout_editor_absoluteX="-1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingRight="@dimen/_10sdp"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingTop="@dimen/_40sdp">
+
+                <TextView
+                    android:id="@+id/ktp_meninggal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ktp_meninggal"
+                    android:textSize="@dimen/_15ssp"
+                    android:padding="@dimen/_5sdp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_5sdp"
+                    android:background="#E4E1E1"
+                    android:layout_margin="@dimen/_1sdp"/>
+
+                <com.zolad.zoominimageview.ZoomInImageView
+                    android:id="@+id/img_Ktp_Meninggal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/inputimg"
+                    app:layout_constraintTop_toBottomOf="@id/ktp_meninggal" />
+
+                <TextView
+                    android:id="@+id/kk_meninggal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_5sdp"
+                    android:textSize="@dimen/_15ssp"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:text="@string/kk_meninggal" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_5sdp"
+                    android:background="#E4E1E1"
+                    android:layout_margin="@dimen/_1sdp"/>
+
+                <com.zolad.zoominimageview.ZoomInImageView
+                    android:id="@+id/img_kk_meninggal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/inputimg"
+                    app:layout_constraintTop_toBottomOf="@id/kk_meninggal" />
+
+                <TextView
+                    android:id="@+id/jamkesmas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_5sdp"
+                    android:textSize="@dimen/_15ssp"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:text="@string/jamkesmas" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_5sdp"
+                    android:background="#E4E1E1"
+                    android:layout_margin="@dimen/_10sdp"/>
+
+                <com.zolad.zoominimageview.ZoomInImageView
+                    android:id="@+id/img_jamkesmas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/inputimg"
+                    app:layout_constraintTop_toBottomOf="@id/kk_meninggal" />
+
+                <TextView
+                    android:id="@+id/ktp_waris"
+                    android:padding="@dimen/_5sdp"
+                    android:textSize="@dimen/_15ssp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:text="@string/ktp_ahli_waris" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_5sdp"
+                    android:background="#E4E1E1"
+                    android:layout_margin="@dimen/_1sdp"/>
+
+                <com.zolad.zoominimageview.ZoomInImageView
+                    android:id="@+id/img_ktp_waris"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/inputimg"
+                    app:layout_constraintTop_toBottomOf="@id/kk_meninggal" />
+
+                <TextView
+                    android:id="@+id/kk_waris"
+                    android:padding="@dimen/_5sdp"
+                    android:textSize="@dimen/_10ssp"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kk_ahli_waris" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_5sdp"
+                    android:background="#E4E1E1"
+                    android:layout_margin="@dimen/_1sdp"/>
+
+                <com.zolad.zoominimageview.ZoomInImageView
+                    android:id="@+id/img_kk_waris"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/inputimg" />
+
+                <TextView
+                    android:id="@+id/akta_kematian"
+                    android:padding="@dimen/_5sdp"
+                    android:textSize="@dimen/_15ssp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:text="@string/akta_kematian" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_5sdp"
+                    android:background="#E4E1E1"
+                    android:layout_margin="@dimen/_1sdp"/>
+
+                <com.zolad.zoominimageview.ZoomInImageView
+                    android:id="@+id/img_Akta_kematian"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/inputimg"
+                    app:layout_constraintTop_toBottomOf="@id/kk_meninggal" />
+
+                <TextView
+                    android:id="@+id/pernyataan_waris"
+                    android:padding="@dimen/_5sdp"
+                    android:textSize="@dimen/_15ssp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:text="@string/surat_pernyataan_waris" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_5sdp"
+                    android:background="#E4E1E1"
+                    android:layout_margin="@dimen/_1sdp"/>
+
+                <com.zolad.zoominimageview.ZoomInImageView
+                    android:id="@+id/img_pernyataan_waris"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/inputimg"
+                    app:layout_constraintTop_toBottomOf="@id/kk_meninggal" />
+
+                <TextView
+                    android:id="@+id/integritas_waris"
+                    android:padding="@dimen/_5sdp"
+                    android:textSize="@dimen/_15ssp"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pakta_integritas_ahli_waris" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_5sdp"
+                    android:background="#E4E1E1"
+                    android:layout_margin="@dimen/_1sdp"/>
+
+
+                <com.zolad.zoominimageview.ZoomInImageView
+                    android:id="@+id/img_integritas_waris"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/inputimg"
+                    app:layout_constraintTop_toBottomOf="@id/kk_meninggal" />
+                <TextView
+                    android:id="@+id/buku_tabungan"
+                    android:padding="@dimen/_5sdp"
+                    android:textSize="@dimen/_15ssp"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/buku_tabungan" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_5sdp"
+                    android:background="#E4E1E1"
+                    android:layout_margin="@dimen/_1sdp"/>
+                <com.zolad.zoominimageview.ZoomInImageView
+                    android:id="@+id/img_buku_tabungan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/inputimg"
+                    app:layout_constraintTop_toBottomOf="@id/kk_meninggal" />
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

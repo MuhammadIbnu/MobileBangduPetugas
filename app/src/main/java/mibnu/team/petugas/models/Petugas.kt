@@ -6,6 +6,6 @@ import kotlinx.android.parcel.Parcelize
 
 @Parcelize
 data class Petugas(
-    @SerializedName("name") var name : String? = null,
+    @SerializedName("nama") var name : String? = null,
     @SerializedName("username") var username: String? = null
 ) : Parcelable
