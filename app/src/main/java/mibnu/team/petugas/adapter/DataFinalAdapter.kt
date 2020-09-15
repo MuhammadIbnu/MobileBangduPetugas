@@ -35,10 +35,6 @@ class DataFinalAdapter (private var dataIII:MutableList<Data>, private var conte
                     val dataReceived : TextView = findViewById(R.id.icon)
                     val hasil ="Diterima"
                     dataReceived.text=hasil
-                }else if(d.confirmedII==null){
-                    val dataReceived : TextView = findViewById(R.id.icon2)
-                    val hasil ="belum divalidasi"
-                    dataReceived.text = hasil
                 }else{
                     val dataReceived : TextView = findViewById(R.id.icon1)
                     val hasil ="Ditolak"

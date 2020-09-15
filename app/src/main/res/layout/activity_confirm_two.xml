@@ -64,7 +64,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-condensed"
-            android:text="Berkas masuk"
+            android:text="Berkas Valid"
             android:textColor="@color/white"
             android:textSize="@dimen/_20ssp"
             android:textStyle="bold"
@@ -80,7 +80,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-condensed"
-            android:text="Berkas ini adalah berkas yang sudah melakukan pencairan"
+            android:text="Berkas ini adalah "
             android:textColor="@color/white"
             android:textSize="@dimen/_12ssp"
             app:layout_constraintBottom_toBottomOf="@+id/imageView8"
@@ -88,6 +88,20 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@id/txtberkas"
             app:layout_constraintTop_toBottomOf="@id/txtberkas"
+            app:layout_constraintVertical_bias="0.034" />
+        <TextView
+            android:id="@+id/txtsubberkas1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:text="berkas yang sudah melakukan pencairan"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/txtsubberkas"
+            app:layout_constraintTop_toBottomOf="@id/txtsubberkas"
             app:layout_constraintVertical_bias="0.034" />
 
         <androidx.recyclerview.widget.RecyclerView
