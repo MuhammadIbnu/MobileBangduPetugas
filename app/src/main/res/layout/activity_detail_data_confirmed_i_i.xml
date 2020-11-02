@@ -200,12 +200,6 @@
                         android:layout_height="wrap_content"
                         android:text="@string/jamkesmas" />
 
-                    <com.google.android.material.checkbox.MaterialCheckBox
-                        android:layout_width="wrap_content"
-                        android:id="@+id/cb_jamkesmas"
-                        android:layout_alignParentEnd="true"
-                        android:layout_height="wrap_content"/>
-
                 </RelativeLayout>
 
                 <View
@@ -387,11 +381,6 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/_16sdp"
                         android:text="@string/buku_tabungan" />
-                    <com.google.android.material.checkbox.MaterialCheckBox
-                        android:layout_width="wrap_content"
-                        android:id="@+id/cb_buku_tabungan"
-                        android:layout_alignParentEnd="true"
-                        android:layout_height="wrap_content"/>
                 </RelativeLayout>
                 <View
                     android:layout_width="match_parent"
